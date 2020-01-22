@@ -1,0 +1,21 @@
+{
+  "name": "product_landing_page",
+  "version": "1.0.0",
+  "description": "Landing Page for a product",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "keywords": [
+    "html",
+    "css",
+    "javascript",
+    "landing-page",
+    "responsive"
+  ],
+  "author": "wisekrakr",
+  "license": "MIT",
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  }
+}

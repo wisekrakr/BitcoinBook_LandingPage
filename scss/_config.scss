@@ -1,0 +1,29 @@
+$primary-color: rgb(41, 38, 38);
+$secondary-color: #9fd1ee;
+$tertiary-color: #dbc588;
+$danger-color: #af160d;
+$light-color: rgb(202, 200, 200);
+$background-opacity: rgba(0, 0, 0, 0.7);
+$bg-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.2),
+  0 0.5rem 1.125rem rgba(75, 0, 0, 0.2);
+
+.bg-light {
+  background-color: rgba(lighten($light-color, 6), 0.85);
+}
+.bg-dark {
+  background-color: rgba(lighten($primary-color, 6), 0.85);
+}
+
+@mixin easeOut {
+  transition: all 0.75s ease-out;
+}
+
+//Set Text Color
+
+@function setTextColor($color) {
+  @if (lightness($color) > 40) {
+    @return rgb(56, 53, 53);
+  } @else {
+    @return #ffffff;
+  }
+}

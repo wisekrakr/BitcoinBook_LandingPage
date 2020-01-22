@@ -1,0 +1,269 @@
+@import "config";
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
+  background-color: $primary-color;
+  color: setTextColor($primary-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3;
+}
+
+a {
+  color: $tertiary-color;
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem;
+}
+
+.navbar {
+  font-size: 1.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .logo {
+    font-size: 2rem;
+  }
+  .nav {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    a {
+      padding: 0 1rem;
+      @include easeOut;
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.main-section,
+.content-section {
+  margin: 2rem 0;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+  }
+
+  h1 {
+    font-size: 2rem;
+    color: $tertiary-color;
+  }
+  p {
+    margin: 1rem;
+  }
+
+  li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center;
+    a {
+      color: #fff;
+    }
+  }
+
+  .video {
+    width: 90%;
+  }
+}
+
+.overlay-section {
+  position: relative;
+  background: url("/dist/assets/bitcoin1.jpg") no-repeat bottom center/cover;
+  height: 600px;
+
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $background-opacity;
+
+    &-inner {
+      color: setTextColor($primary-color);
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      max-width: 860px;
+      padding: 5rem 0;
+
+      h2 {
+        font-size: 5rem;
+        margin-top: 1rem;
+      }
+      h3 {
+        font-size: 2rem;
+      }
+      p {
+        font-size: 1.5;
+        margin-top: 1rem;
+      }
+    }
+  }
+}
+
+.footer-section {
+  color: setTextColor($primary-color);
+  background: $light-color;
+  padding: 4rem 0;
+  line-height: 1.9;
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    margin-bottom: 0.7rem;
+  }
+
+  .buy {
+    font-size: 3rem;
+    margin: 2rem;
+    @include easeOut;
+    &:hover {
+      color: $tertiary-color;
+      text-shadow: $bg-shadow;
+    }
+  }
+  a {
+    color: $primary-color;
+  }
+
+  i {
+    margin-right: 0.7rem;
+  }
+  .fa-twitter {
+    color: #1da1f2;
+  }
+  .fa-facebook {
+    color: #3b5998;
+  }
+  .fa-youtube {
+    color: #ff0000;
+  }
+
+  #email-form {
+    margin-top: 2rem;
+  }
+
+  .email-form {
+    width: 100%;
+    display: inline-block;
+    background-color: $primary-color;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0;
+
+    .form-control {
+      display: inline-block;
+      border: 0;
+      outline: 0;
+      font-size: 1rem;
+      color: $light-color;
+      background-color: transparent;
+      font-family: inherit;
+      margin: 0;
+      padding: 0 3rem 0 1.5rem;
+      width: 100%;
+      height: 45px;
+      border-radius: 20px;
+    }
+    .submit {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      background-color: #eee;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      border: 0;
+      color: #333;
+      cursor: pointer;
+      border-radius: 0 20px 20px 0;
+    }
+  }
+}
+.wisekrakr {
+  width: 100%;
+  background-color: $light-color;
+
+  p {
+    text-align: center;
+
+    span {
+      font-family: "Bangers", cursive;
+    }
+  }
+}
+
+.btn {
+  display: inline-block;
+  background: $primary-color;
+  color: $tertiary-color;
+  padding: 0.5rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  @include easeOut;
+  &:hover {
+    color: setTextColor($primary-color);
+    background: $secondary-color;
+  }
+}
+
+@import "mobile";

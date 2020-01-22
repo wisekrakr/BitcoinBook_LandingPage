@@ -1,0 +1,242 @@
+.bg-light {
+  background-color: rgba(217, 216, 216, 0.85); }
+
+.bg-dark {
+  background-color: rgba(57, 53, 53, 0.85); }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: "Ubuntu", sans-serif;
+  line-height: 1.6;
+  background-color: #292626;
+  color: #ffffff; }
+
+h1,
+h2,
+h3,
+h4 {
+  line-height: 1.3; }
+
+a {
+  color: #dbc588;
+  text-decoration: none; }
+
+ul {
+  list-style: none; }
+
+img {
+  width: 100%; }
+
+.container {
+  max-width: 1100px;
+  margin: auto;
+  overflow: hidden;
+  padding: 0 2rem; }
+
+.navbar {
+  font-size: 1.2rem;
+  padding-top: 0.3rem;
+  padding-bottom: 0.3rem; }
+  .navbar .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); }
+  .navbar .logo {
+    font-size: 2rem; }
+  .navbar .nav {
+    justify-self: flex-end;
+    display: flex;
+    align-items: center;
+    justify-content: center; }
+    .navbar .nav a {
+      padding: 0 1rem;
+      transition: all 0.75s ease-out; }
+      .navbar .nav a:hover {
+        color: #9fd1ee; }
+
+.main-section,
+.content-section {
+  margin: 2rem 0; }
+  .main-section .container,
+  .content-section .container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center; }
+  .main-section h1,
+  .content-section h1 {
+    font-size: 2rem;
+    color: #dbc588; }
+  .main-section p,
+  .content-section p {
+    margin: 1rem; }
+  .main-section li,
+  .content-section li {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 3rem;
+    align-items: center;
+    justify-content: center; }
+    .main-section li a,
+    .content-section li a {
+      color: #fff; }
+  .main-section .video,
+  .content-section .video {
+    width: 90%; }
+
+.overlay-section {
+  position: relative;
+  background: url("/dist/assets/bitcoin1.jpg") no-repeat bottom center/cover;
+  height: 600px; }
+  .overlay-section .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.7); }
+    .overlay-section .overlay-inner {
+      color: #ffffff;
+      height: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      margin: auto;
+      max-width: 860px;
+      padding: 5rem 0; }
+      .overlay-section .overlay-inner h2 {
+        font-size: 5rem;
+        margin-top: 1rem; }
+      .overlay-section .overlay-inner h3 {
+        font-size: 2rem; }
+      .overlay-section .overlay-inner p {
+        font-size: 1.5;
+        margin-top: 1rem; }
+
+.footer-section {
+  color: #ffffff;
+  background: #cac8c8;
+  padding: 4rem 0;
+  line-height: 1.9; }
+  .footer-section .container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 1rem; }
+  .footer-section h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem; }
+  .footer-section h3 {
+    margin-bottom: 0.7rem; }
+  .footer-section .buy {
+    font-size: 3rem;
+    margin: 2rem;
+    transition: all 0.75s ease-out; }
+    .footer-section .buy:hover {
+      color: #dbc588;
+      text-shadow: 0.25rem 0.25rem 0.6rem rgba(0, 0, 0, 0.2), 0 0.5rem 1.125rem rgba(75, 0, 0, 0.2); }
+  .footer-section a {
+    color: #292626; }
+  .footer-section i {
+    margin-right: 0.7rem; }
+  .footer-section .fa-twitter {
+    color: #1da1f2; }
+  .footer-section .fa-facebook {
+    color: #3b5998; }
+  .footer-section .fa-youtube {
+    color: #ff0000; }
+  .footer-section #email-form {
+    margin-top: 2rem; }
+  .footer-section .email-form {
+    width: 100%;
+    display: inline-block;
+    background-color: #292626;
+    position: relative;
+    border-radius: 20px;
+    line-height: 0; }
+    .footer-section .email-form .form-control {
+      display: inline-block;
+      border: 0;
+      outline: 0;
+      font-size: 1rem;
+      color: #cac8c8;
+      background-color: transparent;
+      font-family: inherit;
+      margin: 0;
+      padding: 0 3rem 0 1.5rem;
+      width: 100%;
+      height: 45px;
+      border-radius: 20px; }
+    .footer-section .email-form .submit {
+      display: inline-block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 45px;
+      height: 45px;
+      background-color: #eee;
+      font-size: 1rem;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      outline: 0;
+      border: 0;
+      color: #333;
+      cursor: pointer;
+      border-radius: 0 20px 20px 0; }
+
+.wisekrakr {
+  width: 100%;
+  background-color: #cac8c8; }
+  .wisekrakr p {
+    text-align: center; }
+    .wisekrakr p span {
+      font-family: "Bangers", cursive; }
+
+.btn {
+  display: inline-block;
+  background: #292626;
+  color: #dbc588;
+  padding: 0.5rem 1.3rem;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  transition: all 0.75s ease-out; }
+  .btn:hover {
+    color: #ffffff;
+    background: #9fd1ee; }
+
+@media (max-width: 767px) {
+  .main-section .container,
+  .content-section .container {
+    grid-template-columns: 1fr;
+    text-align: center; }
+    .main-section .container div:first-child,
+    .content-section .container div:first-child {
+      order: 2; }
+    .main-section .container div:last-child,
+    .content-section .container div:last-child {
+      order: -1; }
+    .main-section .container img,
+    .content-section .container img {
+      width: 80%;
+      margin: auto; }
+    .main-section .container video,
+    .content-section .container video {
+      margin-top: 1rem; }
+  .overlay-section .overlay-inner {
+    padding: 1rem; }
+    .overlay-section .overlay-inner h2 {
+      font-size: 3rem; }
+  .footer-section .container {
+    grid-template-columns: 1fr;
+    text-align: center; }
+    .footer-section .container > div {
+      margin-top: 1rem; }
+    .footer-section .container div:nth-child(2) {
+      display: none; } }
