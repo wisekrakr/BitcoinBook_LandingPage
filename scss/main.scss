@@ -107,7 +107,8 @@ img {
 
 .overlay-section {
   position: relative;
-  background: url("/dist/assets/bitcoin1.jpg") no-repeat bottom center/cover;
+  background-image: url("/dist/assets/bitcoin1.jpg") no-repeat bottom
+    center/cover;
   height: 600px;
 
   .overlay {
