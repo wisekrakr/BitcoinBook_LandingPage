@@ -1,6 +1,9 @@
 @media (max-width: 992px) {
 }
 @media (max-width: 767px) {
+  .navbar .logo {
+    font-size: 1rem;
+  }
   .main-section,
   .content-section {
     .container {
@@ -46,6 +49,28 @@
         display: none;
       }
     }
+  }
+  .about .about-info {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas:
+      "bio-title"
+      "bio-image";
+
+    .bio-title {
+      h1 {
+        font-size: 3rem;
+      }
+      h3 {
+        font-size: 1.5rem;
+      }
+    }
+    .bio-image {
+      width: 250px;
+      height: 350px;
+    }
+  }
+  .bio {
+    font-size: 1rem;
   }
 }
 @media (max-width: 576px) {

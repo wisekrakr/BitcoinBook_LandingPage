@@ -21,22 +21,32 @@
   <body id="home">
     <nav class="navbar">
       <div class="container">
-        <h1 class="logo">Danny Cabezas Cobos</h1>
+        <h1 class="logo"><a href="index.html">Danny Cabezas Cobos</a></h1>
         <ul class="nav">
-          <li>
+          <li id="en">
             <a
               href="https://www.bol.com/nl/p/all-things-you-need-to-know-about-bitcoin-other-crypto/9200000089824831/"
               target="_blank"
               >Buy Now!</a
             >
           </li>
-          <li><a href="#home">NL</a></li>
+          <li id="nl">
+            <a
+              href="https://www.bol.com/nl/p/alles-wat-je-wilde-weten-over-bitcoin-andere-crypto/9200000091422869/"
+              target="_blank"
+              >Koop Nu!</a
+            >
+          </li>
+          <ul class="language">
+            <li id="nl_click" class="button_lang ">Nl</li>
+            <li id="en_click" class="button_lang current_lang">En</li>
+          </ul>
         </ul>
       </div>
     </nav>
 
-    <!-- Main/Top -->
-    <section class="main-section">
+    <!-- Main/Top English -->
+    <section class="main-section" id="en">
       <div class="container">
         <div>
           <h1>
@@ -54,11 +64,34 @@
         </div>
       </div>
     </section>
+    <!-- Main/Top Dutch -->
+    <section class="main-section" id="nl">
+      <div class="container">
+        <div>
+          <h1>
+            101 hoofdstukken over Bitcoin, Blockchain, Altcoins, Wallets &
+            Handelen
+          </h1>
+          <p>
+            Bitcoin en de Blockchain nemen in rap tempo de wereld over. Dit boek
+            is voor iedereen die weleens over Bitcoin gehoord heeft, maar echt
+            meer wilt weten over deze cryptovaluta en de technologie van de
+            Blockchain.
+          </p>
+          <a href="#" class="btn">Lees Meer</a>
+        </div>
+        <div>
+          <img src="assets/nl_book.jpg" alt="" />
+        </div>
+      </div>
+    </section>
+    <!--  END Main/Top-->
 
     <!-- Overlay -->
     <section class="overlay-section">
       <div class="overlay">
-        <div class="overlay-inner">
+        <!-- English -->
+        <div class="overlay-inner" id="en">
           <h3>Detailed & Understandable</h3>
           <h2>101 easy to follow chapters about Bitcoin from A to Z</h2>
           <p>
@@ -71,8 +104,25 @@
             step what it is.
           </p>
         </div>
+        <!-- Dutch -->
+        <div class="overlay-inner" id="nl">
+          <h3>Gedetailleerd & Begrijpelijk</h3>
+          <h2>
+            101 eenvoudig te volgen hoofdstukken over Bitcoin van A tot Z
+          </h2>
+          <p>
+            Het boek gaat terug naar het begin van de Bitcoin en de opkomt
+            ervan. Dan kijken we stap voor stap naar hoe de Bitcoin precies
+            werkt, op een manier dat te begrijpen is voor iedere lezer. Het boek
+            gaat verder in op veel praktische kanten, hoe je wallets beheert,
+            hoe je kan handelen op beurzen, en nog veel meer. 101 hoofdstukken
+            vol met informatie waardoor je alles te weten komt wat je nodig hebt
+            om volledig aan de slag te gaan met cryptovaluta's.
+          </p>
+        </div>
       </div>
     </section>
+    <!-- END Overlay -->
 
     <!-- Content & video -->
     <section class="content-section">
@@ -83,14 +133,16 @@
             <source src="./assets/vid.ogg" type="video/ogg" />
           </video>
         </div>
-        <div>
+        <!-- English  -->
+        <div id="en">
           <h1>Content</h1>
           <hr />
           <ul>
             <li>
               <span>Publisher</span>
               <span
-                >: <a href="https://home.bravenewbooks.nl/">Brave New Books</a>
+                >:
+                <a href="https://home.bravenewbooks.nl/">Brave New Books</a>
               </span>
             </li>
             <li>
@@ -127,15 +179,66 @@
             </li>
           </ul>
         </div>
+        <!-- Dutch -->
+        <div id="nl">
+          <h1>Inhoud</h1>
+          <hr />
+          <ul>
+            <li>
+              <span>Uitgever</span>
+              <span
+                >:
+                <a href="https://home.bravenewbooks.nl/">Brave New Books</a>
+              </span>
+            </li>
+            <li>
+              <span>Taal</span>
+              <span>: Nederlands</span>
+            </li>
+            <li>
+              <span>Bindwijze</span>
+              <span>: E-Book</span>
+            </li>
+            <li>
+              <span>Druk</span>
+              <span>: 1</span>
+            </li>
+            <li>
+              <span>Verschijningsdatum </span>
+              <span>: mei 2018</span>
+            </li>
+            <li>
+              <span>Aantal pagina's </span>
+              <span>: 148 pagina's</span>
+            </li>
+            <li>
+              <span>E-book formaat</span>
+              <span>: EPUB met digitaal watermerk </span>
+            </li>
+            <li>
+              <span>Illustraties </span>
+              <span>: Met illustraties </span>
+            </li>
+            <li>
+              <span>EAN</span>
+              <span>: 9789402174519</span>
+            </li>
+          </ul>
+        </div>
       </div>
     </section>
+    <!-- END Content & Video -->
 
     <!-- Footer -->
     <footer class="footer-section">
       <div class="container">
         <div>
-          <h2>All things you need to know about Bitcoin & other Crypto</h2>
-
+          <h2 id="en">
+            All things you need to know about Bitcoin & other Crypto
+          </h2>
+          <h2 id="nl">
+            Alles wat je wilde weten over Bitcoin & andere Crypto
+          </h2>
           <a href="http://twitter.com">
             <i class="fab fa-twitter fa-2x"></i>
           </a>
@@ -146,13 +249,22 @@
             <i class="fab fa-youtube fa-2x"></i>
           </a>
         </div>
-        <div>
+        <div id="en">
           <h3>Company Info</h3>
           <ul>
-            <li><a href="#">All Products</a></li>
-            <li><a href="#">About Me</a></li>
+            <li><a href="products.html">All Products</a></li>
+            <li><a href="about.html">About Me</a></li>
             <li><a href="#">Privacy Policy</a></li>
             <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+        <div id="nl">
+          <h3>Bedrijfs Info</h3>
+          <ul>
+            <li><a href="products.html">Alle Producten</a></li>
+            <li><a href="about.html">Over Mij</a></li>
+            <li><a href="#">Privacybeleid</a></li>
+            <li><a href="#">Servicevoorwaarden</a></li>
           </ul>
         </div>
         <div>
@@ -185,12 +297,20 @@
             </form>
           </div>
         </div>
-        <div>
+        <div id="en">
           <a
             class="buy"
             href="https://www.bol.com/nl/p/all-things-you-need-to-know-about-bitcoin-other-crypto/9200000089824831/"
             target="_blank"
             >Buy Now!</a
+          >
+        </div>
+        <div id="nl">
+          <a
+            class="buy"
+            href="https://www.bol.com/nl/p/alles-wat-je-wilde-weten-over-bitcoin-andere-crypto/9200000091422869/"
+            target="_blank"
+            >Koop Nu!</a
           >
         </div>
       </div>
@@ -202,5 +322,6 @@
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/main.js"></script>
   </body>
 </html>

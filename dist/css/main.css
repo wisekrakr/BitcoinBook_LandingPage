@@ -135,7 +135,9 @@ img {
     margin-bottom: 0.7rem; }
   .footer-section .buy {
     font-size: 3rem;
-    margin: 2rem;
+    display: block;
+    text-align: center;
+    margin: auto;
     transition: all 0.75s ease-out; }
     .footer-section .buy:hover {
       color: #dbc588;
@@ -198,6 +200,50 @@ img {
     .wisekrakr p span {
       font-family: "Bangers", cursive; }
 
+.about .about-info {
+  display: grid;
+  grid-template-areas: "bio-title bio-image ";
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  align-items: center;
+  justify-content: center; }
+  .about .about-info a {
+    padding: 0.6rem;
+    color: #9fd1ee; }
+    .about .about-info a:hover {
+      color: rgba(25, 23, 23, 0.5);
+      transition: all 0.75s ease-out; }
+  .about .about-info .bio-title {
+    grid-area: bio-title;
+    display: block;
+    margin: auto; }
+    .about .about-info .bio-title h1 {
+      font-size: 5rem; }
+    .about .about-info .bio-title h3 {
+      font-size: 3rem; }
+    .about .about-info .bio-title .text-secondary {
+      color: #9fd1ee; }
+  .about .about-info .bio-image {
+    grid-area: bio-image;
+    display: block;
+    margin: auto;
+    width: 300px;
+    height: 400px;
+    border-radius: 50%;
+    background-size: cover;
+    border: #9fd1ee 3px solid; }
+
+.bio {
+  margin: auto;
+  padding: 3rem;
+  text-align: center;
+  font-size: 2rem; }
+
+.products {
+  text-align: center; }
+  .products .product-list {
+    margin-top: 2rem; }
+
 .btn {
   display: inline-block;
   background: #292626;
@@ -212,6 +258,8 @@ img {
     background: #9fd1ee; }
 
 @media (max-width: 767px) {
+  .navbar .logo {
+    font-size: 1rem; }
   .main-section .container,
   .content-section .container {
     grid-template-columns: 1fr;
@@ -239,4 +287,16 @@ img {
     .footer-section .container > div {
       margin-top: 1rem; }
     .footer-section .container div:nth-child(2) {
-      display: none; } }
+      display: none; }
+  .about .about-info {
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-areas: "bio-title" "bio-image"; }
+    .about .about-info .bio-title h1 {
+      font-size: 3rem; }
+    .about .about-info .bio-title h3 {
+      font-size: 1.5rem; }
+    .about .about-info .bio-image {
+      width: 250px;
+      height: 350px; }
+  .bio {
+    font-size: 1rem; } }
